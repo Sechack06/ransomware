@@ -1,2 +1,2 @@
 # ransomware
-my ransomware
+Ransomware based on AES CBC mode
